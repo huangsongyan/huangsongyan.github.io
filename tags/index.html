@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
     <title>
         
-        hexo搭建填坑,安装错误及解决方法｜Hubery的博客
+        tags｜Hubery的博客
         
     </title>
 
-    <link rel="canonical" href="http://blog.hsy123.tk/2017/04/26/hexo搭建填坑-安装错误及解决方法/">
+    <link rel="canonical" href="http://blog.hsy123.tk/tags/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -43,7 +43,7 @@
 <!-- hack iOS CSS :active style -->
 <body ontouchstart="" class="animated fadeIn">
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "false" data-istags="false
 " data-ishome = "false" >
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -131,163 +131,153 @@
 </script>
 
 <!-- Main Content -->
-
-<!--only post-->
-
-
-<img class="wechat-title-img"
-     src="http://op0e54khb.bkt.clouddn.com/post_default_img.jpeg">
-
-
 <style>
-    
-    header.intro-header {
-        background-image: url('http://op0e54khb.bkt.clouddn.com/post_default_img.jpeg')
+    .intro-header .site-heading {
+        margin: 50px;
     }
-
-    
 </style>
 
+<!-- Page Header -->
 <header class="intro-header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
-                <div class="post-heading">
-                    <h1>hexo搭建填坑,安装错误及解决方法</h1>
-                    
-                    <span class="meta">
-                         作者 Hubery Huang
-                        <span>
-                          日期 2017-04-26
-                         </span>
-                    </span>
-                    <div class="tags text-center">
-                        
-                        <a class="tag" href="/tags/#hexo"
-                           title="hexo">hexo</a>
-                        
-                        <a class="tag" href="/tags/#搭建"
-                           title="搭建">搭建</a>
-                        
-                        <a class="tag" href="/tags/#错误"
-                           title="错误">错误</a>
-                        
-                        <a class="tag" href="/tags/#解决方法"
-                           title="解决方法">解决方法</a>
-                        
-                    </div>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading text-center">
+                    <h1>tags</h1>
+                    <span class="subheading"></span>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="post-title-haojen">
-        <span>
-            hexo搭建填坑,安装错误及解决方法
-        </span>
     </div>
 </header>
 
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-            <!-- Post Container -->
-            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <h2 id="hexo搭建的需要的环境"><a href="#hexo搭建的需要的环境" class="headerlink" title="hexo搭建的需要的环境"></a>hexo搭建的需要的环境</h2><ol>
-<li>node.js 没有安装node.js的童鞋，具体怎么安装在这里就不提供教程了，提供官网地址 <a href="https://nodejs.org/zh-cn/" target="_blank" rel="external">链接地址</a></li>
-<li>git 官网地址 <a href="https://git-scm.com/" target="_blank" rel="external">链接地址</a></li>
-</ol>
-<h2 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装"></a>hexo安装</h2><ul>
-<li><p>安装完前面的两个软件就可以进行安装hexo  </p>
-<p>打开终端执行下面的代码  </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">npm install hexo-cli -g</div><div class="line"></div><div class="line">hexo init blog</div><div class="line"></div><div class="line">cd blog</div><div class="line"></div><div class="line">npm install</div><div class="line"></div><div class="line">hexo server</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="theme下载替换"><a href="#theme下载替换" class="headerlink" title="theme下载替换"></a>theme下载替换</h2><p>hexo官网有提供很多样式主题提供下载，具体可到官网下载。  </p>
-<p>不过这里可能有个坑，下载下来的theme的含有.git，本来自己项目也含有.git。就不会要子项目的git上传过去，故下来可以删除主题的.git文件夹或者修改theme的remote地址,再把整个项目上传到git上去。</p>
-<h2 id="从git克隆自己的blog项目"><a href="#从git克隆自己的blog项目" class="headerlink" title="从git克隆自己的blog项目"></a>从git克隆自己的blog项目</h2><p>克隆下来后，要注意有没有下载到相应的主题，不然运行会出现空界面。</p>
-<p>接着可以进入项目目录，执行 </p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">npm install</div></pre></td></tr></table></figure>
-<p>安装相关依赖.</p>
-<p>最后执行 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure></p>
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <!-- 标签云 -->
+            <div id='tag_cloud' class="tags">
+                
+                <a href="#前端" title="前端" rel="0">前端</a>
+                
+                <a href="#Hexo" title="Hexo" rel="0">Hexo</a>
+                
+                <a href="#HTML" title="HTML" rel="0">HTML</a>
+                
+                <a href="#JavaScript" title="JavaScript" rel="0">JavaScript</a>
+                
+                <a href="#hexo" title="hexo" rel="1">hexo</a>
+                
+                <a href="#搭建" title="搭建" rel="1">搭建</a>
+                
+                <a href="#错误" title="错误" rel="1">错误</a>
+                
+                <a href="#解决方法" title="解决方法" rel="1">解决方法</a>
+                
+            </div>
 
+            <!-- 标签列表 -->
+            
+            <div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="前端">
+                    <span class="tag-text">前端</span>
+                </span>
+                
+            </div>
+            
+            <div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="Hexo">
+                    <span class="tag-text">Hexo</span>
+                </span>
+                
+            </div>
+            
+            <div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="HTML">
+                    <span class="tag-text">HTML</span>
+                </span>
+                
+            </div>
+            
+            <div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="JavaScript">
+                    <span class="tag-text">JavaScript</span>
+                </span>
+                
+            </div>
+            
+            <div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="hexo">
+                    <span class="tag-text">hexo</span>
+                </span>
+                
+                <div class="post-preview">
+                    <a href="/2017/04/26/hexo搭建填坑-安装错误及解决方法/">
+                        <h2 class="post-title">
+                            hexo搭建填坑,安装错误及解决方法
+                        </h2>
+                        
+                    </a>
+                </div>
                 <hr>
                 
-
-                <ul class="pager">
-                    
-                    
-                </ul>
-
-                
-
-                
-
             </div>
-
-            <div class="hidden-xs col-sm-3 toc-col">
-                <div class="toc-wrap">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo搭建的需要的环境"><span class="toc-text">hexo搭建的需要的环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo安装"><span class="toc-text">hexo安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#theme下载替换"><span class="toc-text">theme下载替换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#从git克隆自己的blog项目"><span class="toc-text">从git克隆自己的blog项目</span></a></li></ol>
+            
+            <div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="搭建">
+                    <span class="tag-text">搭建</span>
+                </span>
+                
+                <div class="post-preview">
+                    <a href="/2017/04/26/hexo搭建填坑-安装错误及解决方法/">
+                        <h2 class="post-title">
+                            hexo搭建填坑,安装错误及解决方法
+                        </h2>
+                        
+                    </a>
                 </div>
+                <hr>
+                
             </div>
-        </div>
-
-        <div class="row">
-            <!-- Sidebar Container -->
-
-            <div class="
-                col-lg-8 col-lg-offset-2
-                col-md-10 col-md-offset-1
-                sidebar-container">
-
-                <!-- Featured Tags -->
+            
+            <div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="错误">
+                    <span class="tag-text">错误</span>
+                </span>
                 
-                <section>
-                    <!-- no hr -->
-                    <h5 class="text-center">
-                        <a href="/tags/">FEATURED TAGS</a>
-                    </h5>
-                    <div class="tags">
+                <div class="post-preview">
+                    <a href="/2017/04/26/hexo搭建填坑-安装错误及解决方法/">
+                        <h2 class="post-title">
+                            hexo搭建填坑,安装错误及解决方法
+                        </h2>
                         
-                        <a class="tag" href="/tags/#hexo"
-                           title="hexo">hexo</a>
-                        
-                        <a class="tag" href="/tags/#搭建"
-                           title="搭建">搭建</a>
-                        
-                        <a class="tag" href="/tags/#错误"
-                           title="错误">错误</a>
-                        
-                        <a class="tag" href="/tags/#解决方法"
-                           title="解决方法">解决方法</a>
-                        
-                    </div>
-                </section>
-                
-
-                <!-- Friends Blog -->
-                
-                <div style="margin-top: 20px;">
-                    <h5 class="text-center">FRIENDS</h5>
-                    <ul class="list-inline text-center">
-                        
-                        <li><a href="http://www.baidu.com">百度</a></li>
-                        
-                        <li><a href="http://www.google.com">谷歌</a></li>
-                        
-                    </ul>
+                    </a>
                 </div>
+                <hr>
                 
             </div>
-        </div>
+            
+            <div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="解决方法">
+                    <span class="tag-text">解决方法</span>
+                </span>
+                
+                <div class="post-preview">
+                    <a href="/2017/04/26/hexo搭建填坑-安装错误及解决方法/">
+                        <h2 class="post-title">
+                            hexo搭建填坑,安装错误及解决方法
+                        </h2>
+                        
+                    </a>
+                </div>
+                <hr>
+                
+            </div>
+            
 
+        </div>
     </div>
-</article>
-
-
-
-
-
+</div>
 
 <!-- Footer -->
 <!-- Footer -->
