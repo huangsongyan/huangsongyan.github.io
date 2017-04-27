@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hubery&#39;s Blog</title>
+  <subtitle>Hubery&#39;s Blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://blog.hsy123.tk/"/>
+  <updated>2017-04-27T03:39:10.000Z</updated>
+  <id>http://blog.hsy123.tk/</id>
+  
+  <author>
+    <name>Hubery Huang</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo搭建填坑,安装错误及解决方法</title>
+    <link href="http://blog.hsy123.tk/2017/04/26/hexo%E6%90%AD%E5%BB%BA%E5%A1%AB%E5%9D%91-%E5%AE%89%E8%A3%85%E9%94%99%E8%AF%AF%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>http://blog.hsy123.tk/2017/04/26/hexo搭建填坑-安装错误及解决方法/</id>
+    <published>2017-04-26T14:28:21.000Z</published>
+    <updated>2017-04-27T03:39:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="hexo搭建的需要的环境"><a href="#hexo搭建的需要的环境" class="headerlink" title="hexo搭建的需要的环境"></a>hexo搭建的需要的环境</h2><ol>
+<li>node.js 没有安装node.js的童鞋，具体怎么安装在这里就不提供教程了，提供官网地址 <a href="https://nodejs.org/zh-cn/" target="_blank" rel="external">链接地址</a></li>
+<li>git 官网地址 <a href="https://git-scm.com/" target="_blank" rel="external">链接地址</a></li>
+</ol>
+<h2 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装"></a>hexo安装</h2><ul>
+<li><p>安装完前面的两个软件就可以进行安装hexo  </p>
+<p>打开终端执行下面的代码  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div><div class="line"></div><div class="line">hexo init blog</div><div class="line"></div><div class="line">cd blog</div><div class="line"></div><div class="line">npm install</div><div class="line"></div><div class="line">hexo server</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="theme下载替换"><a href="#theme下载替换" class="headerlink" title="theme下载替换"></a>theme下载替换</h2><p>hexo官网有提供很多样式主题提供下载，具体可到官网下载。  </p>
+<p>不过这里可能有个坑，下载下来的theme的含有.git，本来自己项目也含有.git。就不会要子项目的git上传过去，故下来可以删除主题的.git文件夹或者修改theme的remote地址,再把整个项目上传到git上去。</p>
+<h2 id="从git克隆自己的blog项目"><a href="#从git克隆自己的blog项目" class="headerlink" title="从git克隆自己的blog项目"></a>从git克隆自己的blog项目</h2><p>克隆下来后，要注意有没有下载到相应的主题，不然运行会出现空界面。</p>
+<p>接着可以进入项目目录，执行 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install</div></pre></td></tr></table></figure>
+<p>安装相关依赖.</p>
+<p>最后执行 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;hexo搭建的需要的环境&quot;&gt;&lt;a href=&quot;#hexo搭建的需要的环境&quot; class=&quot;headerlink&quot; title=&quot;hexo搭建的需要的环境&quot;&gt;&lt;/a&gt;hexo搭建的需要的环境&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;node.js 没有安装node.js的童鞋，具
+    
+    </summary>
+    
+      <category term="hexo博客折腾" scheme="http://blog.hsy123.tk/categories/hexo%E5%8D%9A%E5%AE%A2%E6%8A%98%E8%85%BE/"/>
+    
+    
+      <category term="hexo" scheme="http://blog.hsy123.tk/tags/hexo/"/>
+    
+      <category term="搭建" scheme="http://blog.hsy123.tk/tags/%E6%90%AD%E5%BB%BA/"/>
+    
+      <category term="错误" scheme="http://blog.hsy123.tk/tags/%E9%94%99%E8%AF%AF/"/>
+    
+      <category term="解决方法" scheme="http://blog.hsy123.tk/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
+  
+</feed>
