@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.hsy123.tk/"/>
-  <updated>2017-04-27T08:10:48.000Z</updated>
+  <updated>2017-04-27T08:15:18.000Z</updated>
   <id>http://blog.hsy123.tk/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://blog.hsy123.tk/2017/04/27/hexo%E7%88%AC%E5%9D%91/"/>
     <id>http://blog.hsy123.tk/2017/04/27/hexo爬坑/</id>
     <published>2017-04-27T07:39:29.000Z</published>
-    <updated>2017-04-27T08:10:48.000Z</updated>
+    <updated>2017-04-27T08:15:18.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="根-config-yml文件可以设置网站的常用属性。"><a href="#根-config-yml文件可以设置网站的常用属性。" class="headerlink" title="根_config.yml文件可以设置网站的常用属性。"></a>根_config.yml文件可以设置网站的常用属性。</h3><pre><code>title: #设置网站的标题 eg.Hubery&apos;s Blog 
 subtitle: #设置副标题 eg .求知若饥 虚心若愚
@@ -41,6 +41,8 @@ keywords: #关键字 android, 移动, app, 技术
       &lt;h3 id=&quot;根-config-yml文件可以设置网站的常用属性。&quot;&gt;&lt;a href=&quot;#根-config-yml文件可以设置网站的常用属性。&quot; class=&quot;headerlink&quot; title=&quot;根_config.yml文件可以设置网站的常用属性。&quot;&gt;&lt;/a&gt;根_config
     
     </summary>
+    
+      <category term="hexo博客折腾" scheme="http://blog.hsy123.tk/categories/hexo%E5%8D%9A%E5%AE%A2%E6%8A%98%E8%85%BE/"/>
     
     
       <category term="hexo主题" scheme="http://blog.hsy123.tk/tags/hexo%E4%B8%BB%E9%A2%98/"/>
