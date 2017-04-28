@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.hsy123.tk/"/>
-  <updated>2017-04-27T10:02:57.000Z</updated>
+  <updated>2017-04-28T07:06:16.000Z</updated>
   <id>http://blog.hsy123.tk/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mac终端ssh登录远程主机</title>
+    <link href="http://blog.hsy123.tk/2017/04/28/mac%E7%BB%88%E7%AB%AFssh%E7%99%BB%E5%BD%95%E8%BF%9C%E7%A8%8B%E4%B8%BB%E6%9C%BA/"/>
+    <id>http://blog.hsy123.tk/2017/04/28/mac终端ssh登录远程主机/</id>
+    <published>2017-04-28T06:59:55.000Z</published>
+    <updated>2017-04-28T07:06:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="备忘命令"><a href="#备忘命令" class="headerlink" title="备忘命令"></a>备忘命令</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh user@ip -p port</div></pre></td></tr></table></figure>
+<blockquote>
+<p>username:远程主机用户<br>ip:主机ip<br>port: 端口 默认22<br>eg .ssh root@hsy123.tk -p 26910</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;备忘命令&quot;&gt;&lt;a href=&quot;#备忘命令&quot; class=&quot;headerlink&quot; title=&quot;备忘命令&quot;&gt;&lt;/a&gt;备忘命令&lt;/h1&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pr
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>hexo爬坑</title>

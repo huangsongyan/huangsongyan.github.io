@@ -6,6 +6,11 @@
     
 
     
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?b4531629b998c6a9dbc2e394f0d0ce71"></script>
+<!-- End Baidu Tongji -->
+
 
 
 
@@ -15,6 +20,8 @@
     
     <title>Hubery&#39;s Blog | 天将降大任于是人也，必先苦其心志，劳其筋骨，饿其体肤，空乏其身行拂乱其所为，所以动心忍性，曾益其所不能。</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
     
     
     <meta name="keywords" content="android, 移动, app, 技术">
@@ -30,8 +37,8 @@
     
         <link rel="alternate" type="application/atom+xml" title="Hubery&#39;s Blog" href="/atom.xml">
     
-    <link rel="shortcut icon" href="/">
-    <link rel="stylesheet" href="/css/style.css?v=1.6.2">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
     <script>window.lazyScripts=[]</script>
 </head>
 
@@ -43,10 +50,10 @@
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
     </a>
-    <div class="brand-wrap" style="background-image:url(/)">
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
       <div class="brand">
         <a href="/" class="avatar waves-effect waves-circle waves-light">
-          <img src="/">
+          <img src="/img/head_image.jpeg">
         </a>
         <hgroup class="introduce">
           <h5 class="nickname">Hubery Huang</h5>
@@ -56,6 +63,55 @@
     </div>
     <div class="scroll-wrap flex-col">
       <ul class="nav">
+        
+            <li class="waves-block waves-effect active">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/huangsongyan" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://weibo.com/hubery123" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                微博
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about"  >
+                <i class="icon icon-lg icon-link"></i>
+                关于
+              </a>
+            </li>
         
       </ul>
     </div>
@@ -70,6 +126,20 @@
         </a>
         <div class="flex-col header-title ellipsis">Hubery&#39;s Blog</div>
         
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
         
     </div>
 </header>
@@ -92,6 +162,51 @@
 <div class="container body-wrap">
 
     <ul class="post-list">
+    
+        <li class="post-list-item fade">
+            <article id="post-mac终端ssh登录远程主机"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017-04-28 14:59:55" datetime="2017-04-28T06:59:55.000Z"  itemprop="datePublished">2017-04-28</time>
+
+        
+
+
+        
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/04/28/mac终端ssh登录远程主机/">mac终端ssh登录远程主机</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        备忘命令1ssh user@ip -p port
+
+username:远程主机用户ip:主机ipport: 端口 默认22eg .ssh root@hsy123.tk -p 26910
+
+
+    
+
+        <a href="/2017/04/28/mac终端ssh登录远程主机/" class="post-more waves-effect waves-button">
+            阅读全文…
+        </a>
+    </div>
+    
+</article>
+
+        </li>
     
         <li class="post-list-item fade">
             <article id="post-hexo爬坑"
@@ -124,7 +239,12 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        根_config.yml文件可以设置网站的常用属性。t...
+        根_config.yml文件可以设置网站的常用属性。title: #设置网站的标题 eg.Hubery&apos;s Blog 
+subtitle: #设置副标题 eg .求知若饥 虚心若愚
+description: # 设置网站的描述 求知若饥 虚心若愚
+author: # 作者 Hubery Huang
+language: #语言 zh-CN
+keywords: #关键字 android...
     
 
         <a href="/2017/04/27/hexo爬坑/" class="post-more waves-effect waves-button">
@@ -174,7 +294,13 @@
 
     
         hexo搭建的需要的环境
-node.js 没有安装no...
+node.js 没有安装node.js的童鞋，具体怎么安装在这里就不提供教程了，提供官网地址 链接地址
+git 官网地址 链接地址
+
+hexo安装
+安装完前面的两个软件就可以进行安装hexo  
+打开终端执行下面的代码  
+123456789npm install hexo-cli -ghexo init blogcd blognpm installhexo ser...
     
 
         <a href="/2017/04/26/hexo搭建填坑-安装错误及解决方法/" class="post-more waves-effect waves-button">
@@ -201,6 +327,15 @@ node.js 没有安装no...
         <footer class="footer">
     <div class="top">
         
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
 
         <p>
             
@@ -212,7 +347,7 @@ node.js 没有安装no...
     <div class="bottom">
         <p>
             <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span>
-            <span>Hubery Huang &copy; 2017</span>
+            <span>Hubery Huang &copy; 2016 - 2017</span>
         </p>
     </div>
 </footer>
@@ -222,22 +357,109 @@ node.js 没有安装no...
 <a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
 
 
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://blog.hsy123.tk/&title=Hubery's Blog&pic=http://blog.hsy123.tk/img/head_image.jpeg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://blog.hsy123.tk/&title=Hubery's Blog&source=天将降大任于是人也，必先苦其心志，劳其筋骨，饿其体肤，空乏其身行拂乱其所为，所以动心忍性，曾益其所不能。" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://blog.hsy123.tk/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=Hubery's Blog&url=http://blog.hsy123.tk/&via=http://blog.hsy123.tk" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://blog.hsy123.tk/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAAAAAAZai4+AAABW0lEQVR42u3asQ7DIAyE4bz/S9OlQ6Uqzp1Nh3I/U6UG8mXAWDbXJY/1Mepnvp+vZ40GLFgHsVY53NfczdLfBQtWMkt5gfv8HaueCwsWrB5r8i8sWLB6rDqNVo58WLBgTZJmJQS4R/iGXB4WrCNYelVn/vsn9S1YsP6ctcyhr9Bb/z0XFqwwlr6BlRRZCS7G+rBgBbPcBNptohgFX1iwIlnKkTxJjt3SEixYOazeVt9bfpJyB1iwAliTw9gt8o4iFixYh7Lc87E3S/+k5rENC9YRrEkxyMjN3RYpLFiRrN6FgHqru8k3LFiw3MsBdbuld4nhodIMC9ahrL0XDtzQcLsOLFhhrMm9OHfzu+EDFqw01uSSgV4qUi4PPbRYYMEKYLmNEPcwbsYkWLBgmY3PXuCABQtWjyUVZAeNT1iwkllK0qwUcJWPlEpIsGCFsXqNED1wbE6mYcE6jfUC/cXuNvd65AgAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
     <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
 <script>
-var BLOG = { ROOT: '/', SHARE: , REWARD: false };
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 
+
+lazyScripts.push('//s95.cnzz.com/z_stat.php?id=1261824984&web_id=1261824984')
 
 </script>
 
-<script src="/js/main.min.js?v=1.6.2"></script>
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
 
 
 
 
 
 
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
 
 
 
