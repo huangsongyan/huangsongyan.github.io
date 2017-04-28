@@ -4,26 +4,28 @@
 
     
   <url>
-    <loc>http://blog.hsy123.tk/2017/04/28/mac%E7%BB%88%E7%AB%AFssh%E7%99%BB%E5%BD%95%E8%BF%9C%E7%A8%8B%E4%B8%BB%E6%9C%BA/</loc>
-    <lastmod>2017-04-28T07:06:16.000Z</lastmod>
+    <loc>http://blog.hsy123.tk/2017/04/26/hexo%E6%90%AD%E5%BB%BA%E5%A1%AB%E5%9D%91-%E5%AE%89%E8%A3%85%E9%94%99%E8%AF%AF%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2017-04-28T08:00:50.000Z</lastmod>
     <data>
         <display>
-        <title>mac终端ssh登录远程主机</title>
-        <pubTime>2017-04-28T06:59:55.000Z</pubTime>
+        <title>hexo搭建填坑,安装错误及解决方法</title>
+        <pubTime>2017-04-26T14:28:21.000Z</pubTime>
         
+        <tag>hexo</tag>
+         
          
            
+             
+              <breadCrumb title="hexo" url="http://blog.hsy123.tk/categories/hexo/"/>
+          
         </display>
     </data>
     </url>
 
     
-    
-    
-    
   <url>
     <loc>http://blog.hsy123.tk/2017/04/27/hexo%E7%88%AC%E5%9D%91/</loc>
-    <lastmod>2017-04-27T10:02:57.000Z</lastmod>
+    <lastmod>2017-04-28T08:00:31.000Z</lastmod>
     <data>
         <display>
         <title>hexo爬坑</title>
@@ -34,39 +36,50 @@
          
            
              
-              <breadCrumb title="hexo博客折腾" url="http://blog.hsy123.tk/categories/hexo%E5%8D%9A%E5%AE%A2%E6%8A%98%E8%85%BE/"/>
+              <breadCrumb title="hexo" url="http://blog.hsy123.tk/categories/hexo/"/>
           
         </display>
     </data>
     </url>
 
     
-    
   <url>
-    <loc>http://blog.hsy123.tk/2017/04/26/hexo%E6%90%AD%E5%BB%BA%E5%A1%AB%E5%9D%91-%E5%AE%89%E8%A3%85%E9%94%99%E8%AF%AF%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</loc>
-    <lastmod>2017-04-27T03:39:10.000Z</lastmod>
+    <loc>http://blog.hsy123.tk/2017/04/28/mac%E7%BB%88%E7%AB%AFssh%E7%99%BB%E5%BD%95%E8%BF%9C%E7%A8%8B%E4%B8%BB%E6%9C%BA/</loc>
+    <lastmod>2017-04-28T07:59:36.000Z</lastmod>
     <data>
         <display>
-        <title>hexo搭建填坑,安装错误及解决方法</title>
-        <pubTime>2017-04-26T14:28:21.000Z</pubTime>
+        <title>mac终端ssh登录远程主机</title>
+        <pubTime>2017-04-28T06:59:55.000Z</pubTime>
         
-        <tag>hexo</tag>
-         
-        <tag>搭建</tag>
-         
-        <tag>错误</tag>
-         
-        <tag>解决方法</tag>
+        <tag>linux</tag>
          
          
            
-             
-              <breadCrumb title="hexo博客折腾" url="http://blog.hsy123.tk/categories/hexo%E5%8D%9A%E5%AE%A2%E6%8A%98%E8%85%BE/"/>
-          
         </display>
     </data>
     </url>
 
+    
+  <url>
+    <loc>http://blog.hsy123.tk/2017/04/28/Nginx%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D/</loc>
+    <lastmod>2017-04-28T07:59:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>centos下Nginx安装与配</title>
+        <pubTime>2017-04-28T07:39:10.000Z</pubTime>
+        
+        <tag>Nginx</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+    
     
     
 </urlset>

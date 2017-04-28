@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.hsy123.tk/"/>
-  <updated>2017-04-28T07:06:16.000Z</updated>
+  <updated>2017-04-28T07:59:02.000Z</updated>
   <id>http://blog.hsy123.tk/</id>
   
   <author>
@@ -16,11 +16,46 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>centos下Nginx安装与配</title>
+    <link href="http://blog.hsy123.tk/2017/04/28/Nginx%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D/"/>
+    <id>http://blog.hsy123.tk/2017/04/28/Nginx安装与配/</id>
+    <published>2017-04-28T07:39:10.000Z</published>
+    <updated>2017-04-28T07:59:02.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Nginx是一款轻量级的网页服务器、反向代理服务器。相较于Apache、lighttpd具有占有内存少，稳定性高等优势。<strong>它最常的用途是提供反向代理服务</strong>。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>在Centos下，yum源不提供nginx的安装，可以通过切换yum源的方法获取安装。也可以通过直接下载安装包的方法，<strong>以下命令均需root权限执行：</strong></p>
+<h3 id="安装依赖库"><a href="#安装依赖库" class="headerlink" title="安装依赖库"></a>安装依赖库</h3><p>首先安装必要的库（nginx 中gzip模块需要 zlib 库，rewrite模块需要 pcre 库，ssl 功能需要openssl库）。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> yum -y install gcc gcc-c++ make libtool zlib zlib-devel openssl openssl-devel pcre pcre-devel</span></div></pre></td></tr></table></figure>
+<h3 id="安装nginx"><a href="#安装nginx" class="headerlink" title="安装nginx"></a>安装nginx</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ cd /usr/local/</div><div class="line">$ wget http://nginx.org/download/nginx-1.8.0.tar.gz</div><div class="line">$ tar -zxvf nginx-1.8.0.tar.gz</div><div class="line">$ cd nginx-1.8.0  </div><div class="line">$ ./configure --prefix=/usr/local/nginx </div><div class="line">$ make</div><div class="line">$ make install</div></pre></td></tr></table></figure>
+<p>在–prefix后面接以下命令:指定nginx安装目录<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">--prefix=/usr/local/nginx</div></pre></td></tr></table></figure></p>
+<h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ /usr/local/nginx/sbin/nginx</div></pre></td></tr></table></figure>
+<p>检查是否启动成功：</p>
+<p>打开浏览器访问此机器的 IP，如果浏览器出现 Welcome to nginx! 则表示 Nginx 已经安装并运行成功。</p>
+<h3 id="重启："><a href="#重启：" class="headerlink" title="重启："></a>重启：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ /usr/local/nginx/sbin/nginx –s reload</div></pre></td></tr></table></figure>
+<h3 id="停止："><a href="#停止：" class="headerlink" title="停止："></a>停止：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ /usr/local/nginx/sbin/nginx –s stop</div></pre></td></tr></table></figure>
+<h3 id="测试配置文件是否正常："><a href="#测试配置文件是否正常：" class="headerlink" title="测试配置文件是否正常："></a>测试配置文件是否正常：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ /usr/local/nginx/sbin/nginx –t</div></pre></td></tr></table></figure>
+<h3 id="强制关闭："><a href="#强制关闭：" class="headerlink" title="强制关闭："></a>强制关闭：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ pkill nginx</div></pre></td></tr></table></figure>
+<h3 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a>参考链接：</h3><p><a href="http://www.jianshu.com/p/d5114a2a2052" title="Centos下 Nginx安装与配置" target="_blank" rel="external">Centos下 Nginx安装与配置</a><br><a href="http://seanlook.com/2015/05/17/nginx-install-and-config/" title="nginx服务器安装及配置文件详解" target="_blank" rel="external">nginx服务器安装及配置文件详解</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Nginx是一款轻量级的网页服务器、反向代理服务器。相较于Apache、lighttpd具有占有内存少，稳定性高等优势。&lt;strong&gt;它最常的用途是提供反向代理服务&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;header
+    
+    </summary>
+    
+    
+      <category term="Nginx" scheme="http://blog.hsy123.tk/tags/Nginx/"/>
+    
+  </entry>
+  
+  <entry>
     <title>mac终端ssh登录远程主机</title>
     <link href="http://blog.hsy123.tk/2017/04/28/mac%E7%BB%88%E7%AB%AFssh%E7%99%BB%E5%BD%95%E8%BF%9C%E7%A8%8B%E4%B8%BB%E6%9C%BA/"/>
     <id>http://blog.hsy123.tk/2017/04/28/mac终端ssh登录远程主机/</id>
     <published>2017-04-28T06:59:55.000Z</published>
-    <updated>2017-04-28T07:06:16.000Z</updated>
+    <updated>2017-04-28T07:59:36.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="备忘命令"><a href="#备忘命令" class="headerlink" title="备忘命令"></a>备忘命令</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh user@ip -p port</div></pre></td></tr></table></figure>
 <blockquote>
@@ -35,6 +70,8 @@
     </summary>
     
     
+      <category term="linux" scheme="http://blog.hsy123.tk/tags/linux/"/>
+    
   </entry>
   
   <entry>
@@ -42,7 +79,7 @@
     <link href="http://blog.hsy123.tk/2017/04/27/hexo%E7%88%AC%E5%9D%91/"/>
     <id>http://blog.hsy123.tk/2017/04/27/hexo爬坑/</id>
     <published>2017-04-27T07:39:29.000Z</published>
-    <updated>2017-04-27T10:02:57.000Z</updated>
+    <updated>2017-04-28T08:00:31.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="根-config-yml文件可以设置网站的常用属性。"><a href="#根-config-yml文件可以设置网站的常用属性。" class="headerlink" title="根_config.yml文件可以设置网站的常用属性。"></a>根_config.yml文件可以设置网站的常用属性。</h3><pre><code>title: #设置网站的标题 eg.Hubery&apos;s Blog 
 subtitle: #设置副标题 eg .求知若饥 虚心若愚
@@ -64,7 +101,7 @@ keywords: #关键字 android, 移动, app, 技术
     
     </summary>
     
-      <category term="hexo博客折腾" scheme="http://blog.hsy123.tk/categories/hexo%E5%8D%9A%E5%AE%A2%E6%8A%98%E8%85%BE/"/>
+      <category term="hexo" scheme="http://blog.hsy123.tk/categories/hexo/"/>
     
     
       <category term="hexo" scheme="http://blog.hsy123.tk/tags/hexo/"/>
@@ -76,7 +113,7 @@ keywords: #关键字 android, 移动, app, 技术
     <link href="http://blog.hsy123.tk/2017/04/26/hexo%E6%90%AD%E5%BB%BA%E5%A1%AB%E5%9D%91-%E5%AE%89%E8%A3%85%E9%94%99%E8%AF%AF%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
     <id>http://blog.hsy123.tk/2017/04/26/hexo搭建填坑-安装错误及解决方法/</id>
     <published>2017-04-26T14:28:21.000Z</published>
-    <updated>2017-04-27T03:39:10.000Z</updated>
+    <updated>2017-04-28T08:00:50.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="hexo搭建的需要的环境"><a href="#hexo搭建的需要的环境" class="headerlink" title="hexo搭建的需要的环境"></a>hexo搭建的需要的环境</h2><ol>
 <li>node.js 没有安装node.js的童鞋，具体怎么安装在这里就不提供教程了，提供官网地址 <a href="https://nodejs.org/zh-cn/" target="_blank" rel="external">链接地址</a></li>
@@ -104,16 +141,10 @@ keywords: #关键字 android, 移动, app, 技术
     
     </summary>
     
-      <category term="hexo博客折腾" scheme="http://blog.hsy123.tk/categories/hexo%E5%8D%9A%E5%AE%A2%E6%8A%98%E8%85%BE/"/>
+      <category term="hexo" scheme="http://blog.hsy123.tk/categories/hexo/"/>
     
     
       <category term="hexo" scheme="http://blog.hsy123.tk/tags/hexo/"/>
-    
-      <category term="搭建" scheme="http://blog.hsy123.tk/tags/%E6%90%AD%E5%BB%BA/"/>
-    
-      <category term="错误" scheme="http://blog.hsy123.tk/tags/%E9%94%99%E8%AF%AF/"/>
-    
-      <category term="解决方法" scheme="http://blog.hsy123.tk/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
     
   </entry>
   
