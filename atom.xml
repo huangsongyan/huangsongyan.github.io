@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.hsy123.tk/"/>
-  <updated>2017-05-08T00:33:48.000Z</updated>
+  <updated>2017-05-08T01:48:25.000Z</updated>
   <id>http://blog.hsy123.tk/</id>
   
   <author>
@@ -14,6 +14,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>设置/修改root密码</title>
+    <link href="http://blog.hsy123.tk/2017/05/08/%E8%AE%BE%E7%BD%AE-%E4%BF%AE%E6%94%B9root%E5%AF%86%E7%A0%81/"/>
+    <id>http://blog.hsy123.tk/2017/05/08/设置-修改root密码/</id>
+    <published>2017-05-08T01:47:01.000Z</published>
+    <updated>2017-05-08T01:48:25.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="设置-修改root密码"><a href="#设置-修改root密码" class="headerlink" title="设置/修改root密码"></a>设置/修改root密码</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">passwd  root</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;设置-修改root密码&quot;&gt;&lt;a href=&quot;#设置-修改root密码&quot; class=&quot;headerlink&quot; title=&quot;设置/修改root密码&quot;&gt;&lt;/a&gt;设置/修改root密码&lt;/h3&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;tabl
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>android获取项目sha1代码</title>
