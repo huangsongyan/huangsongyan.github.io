@@ -192,11 +192,12 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        centos系统通过yum命令安装tomcat，jdk，搭建javaweb环境配jdk环境详细可以看此链接：http://jingyan.baidu.com/article/4853e1e51d0c101909f72607.html
-
-输入下面的命令查看jdk是否安装
-
-list installed |grep java```12342. 查看yum库中的java安装包```yum -y l...
+        配jdk环境详细可以看此链接：http://jingyan.baidu.com/article/4853e1e51d0c101909f72607.html
+1.输入下面的命令查看jdk是否安装
+yum list installed |grep java
+2.查看yum库中的java安装包
+yum -y list java*
+3.使用yum安装java环境,选择适当的java版本，这里选择1....
     
 
         <a href="/2017/05/08/web环境/" class="post-more waves-effect waves-button">
