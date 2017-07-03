@@ -32,7 +32,7 @@
 <meta property="og:url" content="http://blog.hsy123.tk/2017/05/08/web环境/index.html">
 <meta property="og:site_name" content="Hubery's Blog">
 <meta property="og:description" content="配jdk环境详细可以看此链接：http://jingyan.baidu.com/article/4853e1e51d0c101909f72607.html 1.输入下面的命令查看jdk是否安装 yum list installed |grep java 2.查看yum库中的java安装包 yum -y list java* 3.使用yum安装java环境,选择适当的java版本，这里选择1.7 y">
-<meta property="og:updated_time" content="2017-05-08T10:27:03.000Z">
+<meta property="og:updated_time" content="2017-07-03T03:46:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="centos系统通过yum命令安装tomcat，jdk，搭建javaweb环境">
 <meta name="twitter:description" content="配jdk环境详细可以看此链接：http://jingyan.baidu.com/article/4853e1e51d0c101909f72607.html 1.输入下面的命令查看jdk是否安装 yum list installed |grep java 2.查看yum库中的java安装包 yum -y list java* 3.使用yum安装java环境,选择适当的java版本，这里选择1.7 y">
@@ -222,11 +222,11 @@
 <p>3.安装mysql 服务器端</p>
 <p>yum install mysql-server<br>yum install mysql-devel</p>
 <p>4.启动服务和停止服务</p>
-<p>service mysql start<br>service mysql stop</p>
+<p>service mysql(d) start<br>service mysql(d) stop</p>
 <p>5.通过yum安装的话，要通过下面命令创建数据库的密码,默认密码为空</p>
 <p>mysqladmin -u root password ‘新密码’</p>
 <p>6.创建密码后，可通过下面的命令登陆数据库了</p>
-<p>mysql -u -root -p ‘密码’</p>
+<p>mysql(d) -u -root -p ‘密码’</p>
 <p>7.可通过下面命令查看端口</p>
 <p>netstat -antp</p>
 
@@ -236,7 +236,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-05-08T10:27:03.000Z" itemprop="dateUpdated">2017-05-08 18:27:03</time>
+    最后更新时间：<time datetime="2017-07-03T03:46:09.000Z" itemprop="dateUpdated">2017-07-03 11:46:09</time>
 </span><br>
 
 
